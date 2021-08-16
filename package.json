@@ -1,0 +1,16 @@
+{
+  "name": "practical_task",
+  "version": "1.0.0",
+  "description": "Mini test framework to the user's CRUD Operations",
+  "author": "Igor Vdovichenko",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "config": "^3.3.6",
+    "mocha": "^9.0.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}
