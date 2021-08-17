@@ -74,6 +74,10 @@ describe('POST /users', () => {
     });
 });
 
+/**
+ * This tests should fails. On my mind the api shoudl return "is invalid" error in message field.
+ * But API returns "can't be blank error"
+ */
 describe('POST /users', () => {
     it('Create user with unacceptable value in gender field', (done) => {
         let user = {
@@ -96,6 +100,9 @@ describe('POST /users', () => {
     });
 });
 
+/**
+ * This test is also should fail because API should return error "User doesn't exist and status code 400 Bad Request"
+ */
 describe('DELETE /users/id', () => {
     it('Delete non-existed user', (done) => {
         let userId = 123123123;
